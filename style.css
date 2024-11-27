@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-color-primary: #fff;
+    --font-family: "Raleway", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: var(--font-color-primary);
+    font-family: var(--font-family);
+}
+/* HEADER - BANNER */
+
+header {
+    height: 600px;
+    border-bottom: 1px solid #31A8DD;
+}
+
+.banner {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(9, 125, 175, 0.1)),
+    url('assets/images/banner.png')  no-repeat center/cover;
+    background-size: cover;
+    width: 100%;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    padding: 20px 0;
+    width: 250px;
+    height: 200px;
+}
+
+.logo {
+    margin: 30px 0 0 0;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 50%;
+}
+
+.banner-content h1 {
+    text-transform: uppercase;
+    background: linear-gradient(rgba(51,168,219,1) 0%, rgba(20,114,183,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.banner-content p {
+    width: 520px;
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 0.8px;
+}
+
+.banner-content button {
+    margin-top: 30px;
+    width: 20%;
+    height: 60px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    text-transform: uppercase;
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #3BA1CD, #1572B7);
+    border-image-slice: 1;
+    color: var(--font-color-primary);
+    font-weight: bold;
+    font-size: 15px;
+    background: linear-gradient(rgba(51,168,219,1) 0%, rgba(20,114,183,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* MAIN - course-content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#course-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #31A8DD;
+}
+
+.course-information {
+    width: 80%;
+}
+
+.course-information h2 {
+    text-align: center;
+    margin: 30px 0 0 0;
+    text-transform: uppercase;
+    color: #33A8DB;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+#course-content p {
+    text-align: center;
+    margin: 20px;
+    font-size: 17px;
+}
